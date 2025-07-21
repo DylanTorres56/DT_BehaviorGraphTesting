@@ -1,0 +1,13 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Scripts/BehaviorTree/Editor/BTEditor.uss?fileID=7433441132597879392&amp;guid=42b92993e03dfb74fa4af0b4f6d2864f&amp;type=3#BTEditor" />
+    <uie:ToolbarMenu tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" />
+    <SplitView fixed-pane-initial-dimension="300">
+        <ui:VisualElement name="Left-Panel" style="flex-grow: 1; background-color: rgb(60, 60, 60);">
+            <InspectorView />
+            <ui:Label tabindex="-1" text="Inspector" parse-escape-sequences="true" display-tooltip-when-elided="true" style="opacity: 1; background-color: rgb(32, 32, 32); color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Right-Panel" style="flex-grow: 1;">
+            <BTView name="BTView" style="flex-grow: 1; color: rgb(255, 255, 255); align-items: flex-start;" />
+        </ui:VisualElement>
+    </SplitView>
+</ui:UXML>
